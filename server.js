@@ -8,7 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "https://multiplayer-chess-frontend-aatmik-06s-projects.vercel.app/",
+    origin: "https://multiplayer-chess-frontend-aatmik-06s-projects.vercel.app",
     methods: ["GET", "POST"]
   }
 });
@@ -170,5 +170,5 @@ io.on('connection', (socket) => {
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => {
   console.log(`Chess server running on port ${PORT}`);
-  console.log(`Connect frontend at http://localhost:3000`);
+  console.log(`Connect frontend at https://multiplayer-chess-frontend-aatmik-06s-projects.vercel.app/`);
 });
