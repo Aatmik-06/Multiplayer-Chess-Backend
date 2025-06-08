@@ -8,7 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://multiplayer-chess-frontend-aatmik-06s-projects.vercel.app/",
     methods: ["GET", "POST"]
   }
 });
