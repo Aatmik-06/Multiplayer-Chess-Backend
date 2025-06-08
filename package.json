@@ -1,0 +1,19 @@
+{
+  "name": "chess-backend",
+  "version": "1.0.0",
+  "description": "Backend for multiplayer chess game",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2",
+    "chess.js": "^1.0.0-beta.6",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
